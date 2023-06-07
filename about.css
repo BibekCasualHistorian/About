@@ -149,7 +149,7 @@ a:hover {
     flex-flow: column;
     gap: 0.6em;
     padding: 1em;
-    border: 15px solid #EFEFEF;
+    border: 18px solid #EFEFEF;
 }
 
 .about-me > h2, .recent-posts h2 {
