@@ -1,0 +1,8 @@
+.about-me, .recent-posts {
+    margin-top: 2em;
+    gap: 0.8em;
+}
+
+footer {
+    margin-top: 1.5em;
+}

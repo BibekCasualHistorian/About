@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    padding: 0.5em;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Header  */
+
+.header {
+    background: #F8F8F8;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column;
+    padding: 2em 2em 3.2em;
+    gap: 1.9em;
+}
+
+.header-text {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+}
+
+.header-text > h1 {
+    color: #143774;
+}
+
+.header-text > p {
+    color: #179FDD;
+}
+
+.header-links {
+    display: flex;
+    flex-flow: column;
+    gap: 1em;
+}
+
+.header-links > a {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #71719C;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline 3px;
+    text-decoration-color: inherit;
+}
+
+@media (min-width: 750px) {
+    .header {
+        padding: 2em 4vw 3.2em;
+        flex-flow: row;
+    }
+
+    .header-text {
+        display: flex;
+        flex-flow: column;
+        gap: 2px;
+    }
+
+    .header-links {
+        font-size: max(1.5vw, 1em);
+        margin-left: auto;
+        flex-flow: row;
+        gap: 4vw;
+    }
+}
+
+/* Main  */
+
+/* Section  */
+
+.main {
+    display: flex;
+    flex-flow: column;
+    gap: 1em;
+    margin: 2em 1em;
+}
+
+.big-section {
+    padding: 0em 0.5em 0em 0.5em;
+}
+
+.each-section {
+    margin-bottom: 1.6em;
+    display: flex;
+    flex-flow: column;
+    gap: 0.7em;
+}
+
+/* it doesn't work  */
+
+/* .order {
+    order: -2;
+} */
+
+.each-section > h1 {
+    font-family: 'Lora', serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #143774;
+
+}
+
+.finding-simplicity {
+    color: #143774;
+}
+
+.each-section > a {
+    letter-spacing: 1px;
+    color: #179FDD;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1em;
+    font-family: 'Inter', sans-serif;
+}
+
+@media screen and (min-width: 750px) {
+    .main {
+        flex-flow: row;
+    }
+}
+
+/* Aside  */
+
+.about-me {
+    margin: 0em auto 1em auto;
+    padding: 1em;
+}
+
+.about-me, .recent-posts {
+    display: flex;
+    flex-flow: column;
+    gap: 0.6em;
+    padding: 1em;
+    border: 15px solid #EFEFEF;
+}
+
+.about-me > h2, .recent-posts h2 {
+    text-transform: uppercase;
+    color: #143774;
+    font-weight: 500;
+    font-size: 1.25rem;
+
+}
+
+.recent-posts p {
+    color: #179FDD;
+    margin: 0.3em auto 0.6em auto;
+}
+
+.recent-posts-border-bottom {
+    border-bottom: 1px solid grey;
+    margin-bottom: 0.4em;
+}
+
+@media (min-width: 750px) {
+    .about-me, .recent-posts {
+        gap: 0.6em;
+    }
+}
+
+/* Footer  */
+
+.footer {
+    text-align: center;
+    padding: 4em;
+    color: white;
+    background: #143774;
+}
+
+.footer > h3 {
+    margin-bottom: 0.5em;
+    font-weight: 500;
+}
+
+@media (min-width: 750px) {
+
+}
+
+
+/* About Me html  */
+
+.about-me-primary {
+    margin: 1em;
+    margin-top: 2.1em;
+}
+
+.about-me-text { 
+    margin-top: 0.7em;
+    display: flex;
+    flex-flow: column;
+    gap: 1em;
+    line-height: 1.3;
+}
+
+.about-me-text > h1 {
+    font-weight: 500;
+    color: #143774;
+}
+
+.about-me-text strong {
+    font-weight: 600;
+    color: rgb(94, 64, 64);
+}
